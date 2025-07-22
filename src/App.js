@@ -22,7 +22,7 @@ function App() {
           ))}
         </ul>
       </nav>
-np
+
       {/* Hero Section */}
       <section className="flex flex-col md:flex-row items-center justify-between px-4 sm:px-10 md:px-20 py-12 gap-10">
         {/* Left Content */}
