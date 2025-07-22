@@ -22,7 +22,7 @@ function App() {
           ))}
         </ul>
       </nav>
-
+np
       {/* Hero Section */}
       <section className="flex flex-col md:flex-row items-center justify-between px-4 sm:px-10 md:px-20 py-12 gap-10">
         {/* Left Content */}
@@ -48,14 +48,34 @@ function App() {
             </p>
           </div>
 
-          <div className="mt-6">
-            <a
-              href="https://wa.me/919999999999"
-              className="bg-green-600 text-white px-5 py-2 rounded-full inline-flex items-center gap-2 hover:bg-green-500"
-            >
-              <span>💬</span> Chat on WhatsApp
-            </a>
-          </div>
+           <div className="mt-6 flex flex-col sm:flex-row items-center gap-4">
+  {/* WhatsApp Button */}
+  <a
+    href="https://wa.me/919999999999"
+    className="bg-green-600 text-white px-5 py-2 rounded-full inline-flex items-center gap-2 hover:bg-green-500"
+  >
+    <span>💬</span> Chat on WhatsApp
+  </a>
+
+  {/* Google Form Button */}
+  <a
+    href="https://docs.google.com/forms/d/e/1FAIpQLSdiOd1RSMiavVjXRvt57mTpQiftj05WRpx4DlQ4PwvKWP1Yag/viewform?usp=dialog"  // replace with your form link
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-blue-600 text-white px-5 py-2 rounded-full inline-flex items-center gap-2 hover:bg-blue-500 blink-button"
+  >
+    <img
+      src="https://www.gstatic.com/images/icons/material/system/2x/assignment_white_24dp.png"
+      alt="Google Form Icon"
+      className="w-5 h-5"
+    />
+    Fill Form
+  </a>
+  <span className="text-xs text-gray-200 text-center sm:text-left">
+      Fill the form to confirm your seat.
+    </span>
+</div>
+
         </div>
 
         {/* Right Image */}
