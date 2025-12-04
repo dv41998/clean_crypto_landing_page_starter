@@ -7,29 +7,47 @@ function App() {
       
       {/* Navbar */}
       <nav className="flex flex-col sm:flex-row justify-between items-center px-6 sm:px-8 py-4 gap-4 sm:gap-0">
-        <img
-          src="chemistry_illustration.svg.svg"
-          alt="Logo"
-          className="w-20 h-auto md:w-28"
-        />
+        
+        {/* Logo */}
+        <h1
+          className="text-xl md:text-2xl font-bold tracking-wide text-white"
+          style={{
+            textShadow:
+              "0 0 4px rgba(255,255,255,0.6), 0 0 8px rgba(96,165,250,0.6)",
+          }}
+        >
+          RT <span
+            className="text-blue-400"
+            style={{
+              textShadow:
+                "0 0 6px rgba(96,165,250,0.9), 0 0 12px rgba(96,165,250,0.7)",
+            }}
+          >
+            Science
+          </span>{" "}
+          Academy
+        </h1>
+
+        {/* Navigation Links */}
         <ul className="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm">
-          {[ , "Courses", "Fees & Tution Options", "Testimonials","Contact"].map((label) => (
-            <li key={label}>
-             <a
-  href={
-    label === "Courses"
-      ? "#courses"
-      : label === "Fees & Tution Options"
-      ? "#pricing"
-      : label === "Testimonials"
-      ? "#testimonials"
-      : label === "Contact"
-      ? "#contact"
-      : "#"
-  }
-  className="hover:text-blue-400"
->
-  {label}
+          {["Home", "Courses", "Fees & Tution Options", "Testimonials", "Contact"].map(
+            (label) => (
+              <li key={label}>
+                <a
+                  href={
+                    label === "Courses"
+                      ? "#courses"
+                      : label === "Fees & Tution Options"
+                      ? "#pricing"
+                      : label === "Testimonials"
+                      ? "#testimonials"
+                      : label === "Contact"
+                      ? "#contact"
+                      : "#home"
+                  }
+                  className="hover:text-blue-400"
+                >
+                  {label}
 </a>
 
             </li>
@@ -309,8 +327,6 @@ function App() {
   </div>
 </section>
 
-
-
 <section className="py-12 bg-gray-50" id="contact">
   <div className="max-w-4xl mx-auto px-4">
 
@@ -352,9 +368,6 @@ function App() {
     </div>
   </div>
 </section>
-
-
-
 
 
     </div>
